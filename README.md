@@ -1,3 +1,5 @@
-# arts
+# ARTS Package
 
-Automated Regression Test System (ARTS) for regression testing the Theatro features
+ARTS is the Automated Regression Test System. It is used to regression test
+features of the Theatro system, primarily those supported by the TGS Server.
+
