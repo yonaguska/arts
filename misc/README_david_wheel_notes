@@ -1,0 +1,24 @@
+my MOP
+Example:
+========
+-- On system with package installed:
+
+mkdir configparser
+pip2.7 wheel --wheel-dir=./configparser configparser==3.5.0
+
+-- Now configparser folder contains the package
+
+tar -czvf configparser_wheel.tgz configparser
+
+-- Now the tar gz file contains the folder with the package
+
+On the target system:
+
+put configparser_wheel.tgz in /tmp
+cd /tmp; tar -xvf configparser_wheel.tgz
+cd /tmp; sudo /usr/local/bin/pip2.7 install --no-index --find-links=/tmp/configparser configparser==3.5.0
+summary:
+install package
+save package to wheels repository and zip it up
+
+transfer to target store and install
